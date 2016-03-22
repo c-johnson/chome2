@@ -1,0 +1,29 @@
+{
+  "name": "chome",
+  "version": "0.0.0",
+  "appPath": "app/assets",
+  "authors": [
+    "Chris Johnson <chris@cjohnson.io>"
+  ],
+  "description": "personal repository of chris",
+  "license": "MIT",
+  "homepage": "home.html",
+  "dependencies": {
+    "angular": "~1.2.4",
+    "foundation": "~5.0.3",
+    "requirejs": "~2.1.10",
+    "jquery": "~2.0.3",
+    "modernizr": "~2.7.1",
+    "angular-ui-router": "~0.2.10",
+    "domready": "~1.0.4",
+    "requirejs-domready": "~2.0.1",
+    "underscore": "~1.6.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

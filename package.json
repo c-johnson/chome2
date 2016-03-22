@@ -1,0 +1,31 @@
+{
+  "name": "chome",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "connect": "~2.17.1"
+  },
+  "devDependencies": {
+    "bower": "~1.2.8",
+    "gulp": "~3.6.2",
+    "gulp-livereload": "~1.5.0",
+    "gulp-sass": "^0.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/c-johnson/chome.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/c-johnson/chome/issues"
+  },
+  "homepage": "https://github.com/c-johnson/chome"
+}

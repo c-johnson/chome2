@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Main Blog</title>
+    <link>http://cjohnson.io/words</link>
+    <description>Chris's main channel for blogs, words, and other weird thoughts</description>
+    <item>
+       <title>Anti-Tesla sentiment and the death of optimism (pt 1)</title>
+       <link>http://cjohnson.io/2014/tesla</link>
+       <description>In this post, I use game theory concepts to examine recent media stories about Tesla and how "negativity", broadly speaking, emerges in a post-capitalist, media-heavy culture </description>
+    </item>
+    <item>
+       <title>The broader point behind "robots eating our jobs" (pt 1)</title>
+       <link>http://cjohnson.io/2014/robots-1</link>
+       <description>I use Marc Andreeson and Alex Payne's recent essays on hungry robots as a lens to view problems of communication.  Ultimately, we'll end up with a strategy on to fight the robots.</description>
+    </item>
+    <item>
+       <title>Fear</title>
+       <link>http://cjohnson.io/2014/fear-1</link>
+       <description>In which I look at my greatest fears as a focal point into my moral philosophy.</description>
+    </item>
+    <item>
+       <title>Why I can't even order a bowl of goddamn noodles</title>
+       <link>http://cjohnson.io/2014/momentum</link>
+       <description>I recount the first steps of my journey across the world, in the tone of a person paralyzed by complete neurosis, which totally follows from that first predicate.</description>
+    </item>
+  </channel>
+</rss>
