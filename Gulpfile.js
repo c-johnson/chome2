@@ -86,7 +86,7 @@ gulp.task('watch', function() {
   // gulp.watch('public/img/**').on('change', function(file) {
   //   server.changed(file.path);
   // });
-  // gulp.watch('public/fonts/**').on('change', function(file) {
+  // gulp.watch('fonts/**').on('change', function(file) {
   //   server.changed(file.path);
   // });
 });

@@ -4872,16 +4872,16 @@ General guide on @font-face usage for bold/italic etc, courtesy of Stack Overflo
 */
 @font-face {
   font-family: "Bembo";
-  src: url("/public/fonts/bembo-regular.eot");
+  src: url("/fonts/bembo-regular.eot");
   /* IE9 Compat Modes */
-  src: url("/public/fonts/bembo-regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/bembo-regular.woff") format("woff"), url("/public/fonts/bembo-regular.ttf") format("truetype"), url("/public/fonts/bembo-regular.svg") format("svg");
+  src: url("/fonts/bembo-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/bembo-regular.woff") format("woff"), url("/fonts/bembo-regular.ttf") format("truetype"), url("/fonts/bembo-regular.svg") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
   font-family: "Bembo";
-  src: url("/public/fonts/bembo-semibold.eot");
+  src: url("/fonts/bembo-semibold.eot");
   /* IE9 Compat Modes */
-  src: url("/public/fonts/bembo-semibold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/bembo-semibold.woff") format("woff"), url("/public/fonts/bembo-semibold.ttf") format("truetype"), url("/public/fonts/bembo-semibold.svg") format("svg");
+  src: url("/fonts/bembo-semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/bembo-semibold.woff") format("woff"), url("/fonts/bembo-semibold.ttf") format("truetype"), url("/fonts/bembo-semibold.svg") format("svg");
   /* Legacy iOS */
   font-weight: 500; }
 
@@ -4927,16 +4927,16 @@ General guide on @font-face usage for bold/italic etc, courtesy of Stack Overflo
 */
 @font-face {
   font-family: "Bembo";
-  src: url("/public/fonts/bembo-regular.eot");
+  src: url("/fonts/bembo-regular.eot");
   /* IE9 Compat Modes */
-  src: url("/public/fonts/bembo-regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/bembo-regular.woff") format("woff"), url("/public/fonts/bembo-regular.ttf") format("truetype"), url("/public/fonts/bembo-regular.svg") format("svg");
+  src: url("/fonts/bembo-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/bembo-regular.woff") format("woff"), url("/fonts/bembo-regular.ttf") format("truetype"), url("/fonts/bembo-regular.svg") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
   font-family: "Bembo";
-  src: url("/public/fonts/bembo-semibold.eot");
+  src: url("/fonts/bembo-semibold.eot");
   /* IE9 Compat Modes */
-  src: url("/public/fonts/bembo-semibold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/bembo-semibold.woff") format("woff"), url("/public/fonts/bembo-semibold.ttf") format("truetype"), url("/public/fonts/bembo-semibold.svg") format("svg");
+  src: url("/fonts/bembo-semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/bembo-semibold.woff") format("woff"), url("/fonts/bembo-semibold.ttf") format("truetype"), url("/fonts/bembo-semibold.svg") format("svg");
   /* Legacy iOS */
   font-weight: 500; }
 
