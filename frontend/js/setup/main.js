@@ -17,7 +17,7 @@ require.config({
       deps: ['angular']
     }
   },
-  baseUrl: "public/js",
+  baseUrl: "js",
   paths: {
     "angular": "../bowerc/angular/angular",
     "ui-router": "../bowerc/angular-ui-router/release/angular-ui-router",

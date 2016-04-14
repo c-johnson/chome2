@@ -1,0 +1,13 @@
+{
+  "name": "chome2",
+  "start": {
+    "dir": "/Users/chris/ciqss/proj/chome2",
+    "hangs": [
+      "go run backend/server.go"
+    ],
+    "nohangs": [
+      "open http://localhost:3000",
+      "atom ~/proj/chome2"
+    ]
+  }
+}
