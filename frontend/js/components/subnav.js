@@ -28,7 +28,7 @@ define(["jquery"], function() {
     // Visually activate the correct link in the switcher
     $(this.switcher).find('a').each(function (i, link) {
       $(link).removeClass('active');
-      
+
       if ($(link).attr('href') === sectionID) {
         $(link).addClass('active');
       }
@@ -50,11 +50,13 @@ define(["jquery"], function() {
       this.registerSubnavs();
 
       var hasHash = (window.location !== undefined && window.location.hash !== undefined && window.location.hash !== "");
-      var id = hasHash ? window.location.hash : "#" + this.subnavs[0].sections[0].id;
-      this.subnavs[0].displaySection(id);
+      if (this.subnavs.length > 0) {
+        var id = hasHash ? window.location.hash : "#" + this.subnavs[0].sections[0].id;
+        this.subnavs[0].displaySection(id);
+      }
     },
 
-    /* 
+    /*
       This function loops through every subnav group and registers them into an array of "subnav groups"
     */
     registerSubnavs: function () {
