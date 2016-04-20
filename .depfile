@@ -1,5 +1,11 @@
 {
   "name": "chome2",
+  "host": "45.55.30.66",
+  "target_dir": "/",
+  "cmds": [
+    "docker attach 5070ce582159"
+    "go get -u github.com/c-johnson/chome2"
+  ],
   "start": {
     "dir": "/Users/chris/ciqss/proj/chome2",
     "hangs": [
