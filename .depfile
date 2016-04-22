@@ -1,9 +1,9 @@
 {
-  "name": "chome2",
+  "name": "root",
   "host": "45.55.30.66",
-  "target_dir": "/",
+  "target_dir": "/chome2",
   "cmds": [
-    "docker attach 5070ce582159"
+    "docker attach 5070ce582159",
     "go get -u github.com/c-johnson/chome2"
   ],
   "start": {
