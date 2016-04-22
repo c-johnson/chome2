@@ -31,6 +31,8 @@ gulp.task('style', function () {
   return gulp.src(paths.style)
     .pipe(sass({
       includePaths: [
+        "public/bowerc",
+        "public/bowerc/foundation/scss",
         paths.style
       ]}))
     .pipe(gulp.dest('public/css'));
@@ -56,6 +58,11 @@ gulp.task('rss', function () {
     .pipe(gulp.dest('public'));
 });
 
+gulp.task('html', function () {
+  return gulp.src(paths.html)
+    .pipe(gulp.dest('public/html'));
+});
+
 gulp.task('manifest', function () {
   return gulp.src(paths.manifest)
     .pipe(gulp.dest('public/posts'));
@@ -68,6 +75,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.fonts, ['fonts']);
   gulp.watch(paths.rss, ['rss']);
   gulp.watch(paths.files, ['files']);
+  gulp.watch(paths.html, ['html']);
   gulp.watch(paths.manifest, ['manifest']);
 
   gulp.start('default');
@@ -106,4 +114,4 @@ gulp.task('watch', function() {
 //   server.use(connect.static("public")).listen(process.env.PORT || 8000, next);
 // });
 
-gulp.task('default', ['scripts', 'style', 'images', 'fonts', 'rss', 'manifest', 'files']);
+gulp.task('default', ['scripts', 'style', 'images', 'fonts', 'rss', 'manifest', 'files', 'html']);

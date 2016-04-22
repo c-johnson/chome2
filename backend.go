@@ -9,11 +9,11 @@ func main() {
 	m := martini.Classic()
 
 	m.Use(render.Renderer(render.Options{
-		Directory:  "frontend/html",
+		Directory:  "public/html",
 		Extensions: []string{".html"}, // Specify extensions to load for templates.
 	}))
 
-	m.Use(martini.Static("frontend"))
+	m.Use(martini.Static("public"))
 
 	m.Get("/", func(r render.Render) {
 		r.HTML(200, "App/home", map[string]interface{}{"title": "World of Chris", "active": "home"})
