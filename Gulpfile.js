@@ -7,12 +7,12 @@ var assetRoot = 'frontend/';
 var rawPaths = {
   scripts: ['js/**/*.js'],
   style: ['style/**/*.scss'],
+  html: ['html/**/*.html'],
   fonts: ['fonts/**'],
   images: ['img/**'],
   manifest: ['posts/manifest.json'],
   rss: ['feed.rss'],
-  files: ['files/**'],
-  bower: ['bowerc/**']
+  files: ['files/**']
 };
 
 var paths = {};
@@ -21,8 +21,6 @@ for (var property in rawPaths) {
     paths[property] = "frontend/" + rawPaths[property];
   }
 }
-
-console.log(paths)
 
 gulp.task('scripts', function () {
   return gulp.src(paths.scripts)
@@ -33,7 +31,6 @@ gulp.task('style', function () {
   return gulp.src(paths.style)
     .pipe(sass({
       includePaths: [
-        "public/bowerc",
         paths.style
       ]}))
     .pipe(gulp.dest('public/css'));

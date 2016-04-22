@@ -1,0 +1,11 @@
+@import "vars";
+@import "default/aux";
+@import "default/fonts";
+@import "default/typography";
+@import "default/elements";
+@import "default/layout";
+
+body * {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}

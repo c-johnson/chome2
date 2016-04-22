@@ -1,0 +1,38 @@
+/* Base */
+$base-font-size: 18px;
+// $body-font-family: "Lora", "Georgia", serif;
+$body-font-family: "Bembo", "Lora", "Georgia", serif;
+$rem-base: $base-font-size;
+
+/* Header */
+$header-top-margin: 0;
+$header-bottom-margin: 0;
+$header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+
+/* Paragraph */
+// $paragraph-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$paragraph-font-weight: 300;
+
+/* Top-bar */
+$topbar-bg: white;
+$topbar-link-color: black;
+$topbar-link-color-hover: black;
+$topbar-link-color-active: black;
+$topbar-link-bg-hover: white;
+$topbar-link-bg-active: white;
+$topbar-link-bg-active-hover: white;
+$topbar-menu-link-color: black;
+$topbar-menu-icon-color: black;
+$topbar-title-font-size: 1.8rem;
+$topbar-dropdown-bg: white;
+$topbar-dropdown-link-bg: white;
+$topbar-dropdown-label-color: black;
+
+/* Overrides */
+$cursor-text-value: text;
+
+/* Element overrides / WTFs */
+
+ul li ul, ul li ol {
+  margin-left: auto;
+}

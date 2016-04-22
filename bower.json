@@ -1,7 +1,7 @@
 {
   "name": "chome",
   "version": "0.0.0",
-  "appPath": "app/assets",
+  "appPath": "public",
   "authors": [
     "Chris Johnson <chris@cjohnson.io>"
   ],

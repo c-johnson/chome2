@@ -1,0 +1,21 @@
+@import "globals/vars";
+@import "base";
+
+h1 {
+  margin: 10px 0 20px;
+  // color: blue;
+}
+
+img.selfie {
+  width: 170px;
+  float: right;
+  padding-left: 20px;
+  border-radius: 100%;
+  position: relative;
+}
+
+@media #{$small-only} { 
+  img.selfie {
+    bottom: 0;
+  }
+}
