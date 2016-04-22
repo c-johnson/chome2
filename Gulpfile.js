@@ -2,15 +2,27 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var livereload = require('gulp-livereload');
 
-var paths = {
-  scripts: ['app/assets/js/**/*.js'],
-  style: ['app/assets/style/**/*.scss'],
-  fonts: ['app/assets/fonts/**'],
-  images: ['app/assets/img/**'],
-  manifest: ['app/assets/posts/manifest.json'],
-  rss: ['app/assets/feed.rss'],
-  files: ['app/assets/files/**'],
+var assetRoot = 'frontend/';
+
+var rawPaths = {
+  scripts: ['js/**/*.js'],
+  style: ['style/**/*.scss'],
+  fonts: ['fonts/**'],
+  images: ['img/**'],
+  manifest: ['posts/manifest.json'],
+  rss: ['feed.rss'],
+  files: ['files/**'],
+  bower: ['bowerc/**']
 };
+
+var paths = {};
+for (var property in rawPaths) {
+  if (rawPaths.hasOwnProperty(property)) {
+    paths[property] = "frontend/" + rawPaths[property];
+  }
+}
+
+console.log(paths)
 
 gulp.task('scripts', function () {
   return gulp.src(paths.scripts)
@@ -22,7 +34,7 @@ gulp.task('style', function () {
     .pipe(sass({
       includePaths: [
         "public/bowerc",
-        "app/assets/style"
+        paths.style
       ]}))
     .pipe(gulp.dest('public/css'));
 });
@@ -70,13 +82,13 @@ gulp.task('watch', function() {
   // gulp.watch('public/css/**/*.css').on('change', function(file) {
   //   console.log('scss is being compileedd1!!!!');
 
-  //   // The gulp.watch api is kind of silly here.  It gives you an absolute path for a css file on your system that has changed.  However, the livereload server wants to know the path the web server will serve the file at.  
+  //   // The gulp.watch api is kind of silly here.  It gives you an absolute path for a css file on your system that has changed.  However, the livereload server wants to know the path the web server will serve the file at.
 
   //   // file.path looks like:
   //   // /Users/chris/ciqss/gowrk/src/github.com/c-johnson/chome/public/css/main/home.css
   //   // |_____________________________________________________________|________________|
   //   //                            |                                           |
-  //   //              Preceding file path, discard                        web server 
+  //   //              Preceding file path, discard                        web server
   //   //                9 tokens (+ leading slash)
 
   //   var webPath = file.path.split("/").slice(10).join("/");
