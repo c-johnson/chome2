@@ -34,7 +34,7 @@ gulp.task('style', function () {
     .pipe(sass({
       includePaths: [
         "frontend/bowerc",
-        "frontend/bowerc/foundation/scss/foundation/components",
+        // "frontend/bowerc/foundation/scss/foundation/components",
         paths.style
       ]}))
     .pipe(gulp.dest('public/css'));
