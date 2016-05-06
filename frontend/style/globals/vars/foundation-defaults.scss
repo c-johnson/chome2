@@ -12,6 +12,7 @@ $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-ser
 /* Paragraph */
 // $paragraph-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $paragraph-font-weight: 300;
+$include-html-classes: true;
 
 /* Top-bar */
 $topbar-bg: white;
@@ -35,4 +36,8 @@ $cursor-text-value: text;
 
 ul li ul, ul li ol {
   margin-left: auto;
+}
+
+.testing-something-else {
+  color: black;
 }

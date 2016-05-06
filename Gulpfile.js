@@ -15,6 +15,8 @@ var rawPaths = {
   files: ['files/**']
 };
 
+/* For each of the asset categories, append "frontend/" to each string  */
+
 var paths = {};
 for (var property in rawPaths) {
   if (rawPaths.hasOwnProperty(property)) {
@@ -31,8 +33,8 @@ gulp.task('style', function () {
   return gulp.src(paths.style)
     .pipe(sass({
       includePaths: [
-        "public/bowerc",
-        "public/bowerc/foundation/scss",
+        "frontend/bowerc",
+        "frontend/bowerc/foundation/scss/foundation/components",
         paths.style
       ]}))
     .pipe(gulp.dest('public/css'));
